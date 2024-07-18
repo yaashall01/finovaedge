@@ -1,0 +1,15 @@
+spring:
+  name: eureka-server
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+application:
+  title: FINOVAEDGE
+  version: 1.0.0
+  author: Yassine CHALH

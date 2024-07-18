@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: fraud
+  data:
+    mongodb:
+#      host: localhost
+#      port: 27017
+#      database: fraud_db
+#      username: mongoadmin
+#      password: root
+#      authentication-database: admin
+      uri: mongodb://mongoadmin:root@localhost:27017/fraud_db?authSource=admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+application:
+  title: FINOVAEDGE
+  version: 1.0.0
+  author: Yassine CHALH
+
