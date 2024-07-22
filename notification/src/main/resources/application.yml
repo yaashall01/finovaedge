@@ -25,6 +25,11 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
 application:
   title: FINOVAEDGE
   version: 1.0.0

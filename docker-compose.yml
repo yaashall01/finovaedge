@@ -63,6 +63,12 @@ services:
       - app_network
     restart: unless-stopped
 
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+
 volumes:
   customer_postgres_data:
   pgadmin:
