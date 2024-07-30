@@ -23,5 +23,6 @@ public class NotificationController {
     public void sendNotification(@RequestBody NotificationRequest notificationRequest){
         log.info("New notification ... {}", notificationRequest);
         notificationService.send(notificationRequest);
+        log.info("New notification sent successfully 🤩");
     }
 }

@@ -23,7 +23,7 @@ public class CustomerController {
 
     @PostMapping
     public void registerCostumer(@Valid @RequestBody CustomerRegisterRequest customerRequest){
-        customerService.registerCustomer(customerRequest);
         log.info("New Customer successfully registered : {}", customerRequest);
+        customerService.registerCustomer(customerRequest);
     }
 }
